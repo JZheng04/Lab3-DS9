@@ -13,10 +13,13 @@ function App() {
     <Router>
       <NavbarBS />
       <Routes>
-        <Route path='/' exact element={<Home />}/>
+        <Route path='/Login' exact element={<Login />}/>
+        <Route path='/Recuperar' element={<Recuperar />}/>
+        <Route path='/Registrar' element={<Registrar />}/>
         <Route path='/Estadistica' element={<Estadistica />}/>
         <Route path='/Historial' element={<Historial />}/>
         <Route path='/Perfil' element={<Perfil />}/>
+        <Route path='/' element={<Home />}/>
       </Routes>
     </Router>
   );
